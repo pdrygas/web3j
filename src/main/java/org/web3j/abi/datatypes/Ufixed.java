@@ -3,7 +3,7 @@ package org.web3j.abi.datatypes;
 import java.math.BigInteger;
 
 /**
- * Signed fixed type.
+ * PersonalSign fixed type.
  */
 public class Ufixed extends FixedPointType {
 
