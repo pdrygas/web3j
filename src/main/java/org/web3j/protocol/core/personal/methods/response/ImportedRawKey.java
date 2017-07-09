@@ -4,8 +4,7 @@ import org.web3j.protocol.core.Response;
 
 public class ImportedRawKey extends Response<String> {
 
-	public String getAccountId() {
-		return getResult();
-	}
-	
+    public String getAccountId() {
+        return getResult();
+    }
 }

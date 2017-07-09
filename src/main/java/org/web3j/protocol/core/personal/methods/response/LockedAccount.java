@@ -4,7 +4,7 @@ import org.web3j.protocol.core.Response;
 
 public class LockedAccount extends Response<Boolean> {
 
-	public boolean success(){
-		return getResult();
-	}
+    public boolean success() {
+        return getResult();
+    }
 }

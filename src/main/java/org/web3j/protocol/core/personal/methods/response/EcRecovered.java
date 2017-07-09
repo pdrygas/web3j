@@ -4,7 +4,7 @@ import org.web3j.protocol.core.Response;
 
 public class EcRecovered extends Response<String> {
 
-	public String getEC() {
-		return getResult();
-	}
+    public String getEC() {
+        return getResult();
+    }
 }

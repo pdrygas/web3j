@@ -4,7 +4,7 @@ import org.web3j.protocol.core.Response;
 
 public class Transaction extends Response<String> {
 
-	public String getTransactionId() {
-		return getResult();
-	}
+    public String getTransactionId() {
+        return getResult();
+    }
 }
