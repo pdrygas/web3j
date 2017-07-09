@@ -9,20 +9,20 @@ import java.util.Map;
 
 import org.web3j.crypto.WalletFile;
 import org.web3j.protocol.Web3jService;
+import org.web3j.protocol.admin.methods.response.NewAccountIdentifier;
+import org.web3j.protocol.admin.methods.response.PersonalEcRecover;
+import org.web3j.protocol.admin.methods.response.PersonalListAccounts;
+import org.web3j.protocol.admin.methods.response.PersonalUnlockAccount;
 import org.web3j.protocol.core.JsonRpc2_0Web3j;
 import org.web3j.protocol.core.Request;
 import org.web3j.protocol.core.methods.request.Transaction;
 import org.web3j.protocol.core.methods.response.EthSendTransaction;
 import org.web3j.protocol.core.methods.response.VoidResponse;
-import org.web3j.protocol.parity.methods.response.NewAccountIdentifier;
 import org.web3j.protocol.parity.methods.response.PersonalAccountsInfo;
-import org.web3j.protocol.parity.methods.response.PersonalEcRecover;
-import org.web3j.protocol.parity.methods.response.PersonalListAccounts;
 import org.web3j.protocol.parity.methods.response.PersonalRejectRequest;
 import org.web3j.protocol.parity.methods.response.PersonalRequestsToConfirm;
 import org.web3j.protocol.parity.methods.response.PersonalSign;
 import org.web3j.protocol.parity.methods.response.PersonalSignerEnabled;
-import org.web3j.protocol.parity.methods.response.PersonalUnlockAccount;
 
 /**
  * JSON-RPC 2.0 factory implementation for Parity.
@@ -211,5 +211,15 @@ public class JsonRpc2_0Parity extends JsonRpc2_0Web3j implements Parity {
                 ID,
                 web3jService,
                 PersonalRejectRequest.class);
+    }
+
+    /**.
+     * TODO
+     */
+    @Override
+    public Request<?, EthSendTransaction> personalSendTransaction(
+            Transaction transaction, String passphrase) {
+
+        return null;
     }
 }
